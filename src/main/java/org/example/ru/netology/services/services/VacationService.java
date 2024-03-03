@@ -1,9 +1,8 @@
 package org.example.ru.netology.services.services;
 public class VacationService {
 
-
-
-    public int calculate(int income, int expenses, int threshold, double percentage_expenses) {
+    public int calculate(int income, int expenses, int threshold) {
+        double percentageExpenses = 0.666;
         int monthsOfRest = 0; // счетчик месяцев отдыха
         int money = 0; // количество денег на счету
 
@@ -14,8 +13,8 @@ public class VacationService {
             } else {
                 monthsOfRest++; // увеличиваем счетчик месяцев отдыха
                 money -= expenses;
-                double additional_expenses = money * percentage_expenses;
-                money -= (int)additional_expenses;
+                double additionalExpenses = money * percentageExpenses;
+                money -= (int)additionalExpenses;
             }
         }
 
