@@ -10,9 +10,9 @@ public class VacationServiceTest {
         VacationService service = new VacationService();
 
         // Первый пример
-        assertEquals(3, service.calculate(10_000, 3_000, 20_000));
+        assertEquals(3, service.calculate(10000, 3000, 20000, 0.666));
 
         // Второй пример
-        assertEquals(2, service.calculate(100_000, 60_000, 150_000));
+        assertEquals(2, service.calculate(100000, 60000, 150000, 0.666));
     }
 }
